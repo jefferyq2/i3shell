@@ -1,0 +1,10 @@
+version: '2'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    extends:
+      file: ./env.yaml
+      service: env
+    command: python /i3r/index.wsgi
