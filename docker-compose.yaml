@@ -7,4 +7,4 @@ services:
     extends:
       file: ./env.yaml
       service: env
-    command: python /i3r/index.wsgi
+    command: python /i3r/index.wsgi 8080 config_shell.ini
